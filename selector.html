@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar CSS 3</title>
+
+    <style>
+      body:not(h1) {
+        color:red;
+      }
+
+        p:first-child{
+          color: orange;
+        }
+        p:last-child{
+          font-size: 20px;
+}
+        p:only child{
+          font-size: 20px;
+        }
+
+/*ul :nth-child(2) {
+    text-decoration: line-through;
+}*/
+
+ul :nth-child(odd) {
+    text-decoration: underline;
+}
+
+ul :nth-child(even) {
+    text-decoration: line-through;
+}
+
+ul :nth-child(3n+0) {
+    background: pink;
+}
+
+input:checked{
+    width: 50px;
+}
+
+input:enabled{
+  border: 2px; solid:blue;
+}
+
+input:invalid{
+  background: red;
+  color: white;
+}
+    </style>
+  </head>
+  <body>
+    <h1>selector-pseudo classes</h1>
+
+<div>
+  <span> span pertama</span>
+  <p> paragraph pertama</p>
+
+</div>
+
+    <div>
+    <p>paragraph pertama</p>
+    <p>paragraph kedua</p>
+    <p>paragraph ketiga</p>
+
+</div>
+
+<h1>Nth Child</h1>
+<ul>
+  <li>list pertama</li>
+  <li>list kedua</li>
+  <li>list ketiga</li>
+  <li>list kelima</li>
+  <li>list keenam</li>
+  <li>list ketujuh</li>
+  <li>list kedelapan</li>
+  <li>list kesembilan</li>
+</ul>
+
+<h1>Input</h1>
+
+<input type="checkbox">female&nbsp;&nbsp;
+<input type="checkbox" checked>male&nbsp;&nbsp;&nbsp;
+
+<input type="text" placeholder="nama lengkap">&nbsp;
+<input type="text" placeholder="nama pendek">&nbsp;
+<input type="text" placeholder="kota asal">&nbsp;
+<input type="email" placeholder="email">
+
+<br><br><br>
+  <center><td align="center"><b>Copyright &copy; 2017</b></td><center>
+
+</body>
+</html>
